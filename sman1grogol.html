@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SMAN 1 Grogol</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/fluid-gallery.css" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <style>
+      /* Container Form */
+      #form-container {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      /* Label & Input normal */
+      #form-container label {
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 4px;
+        display: block;
+      }
+      #form-container .form-control {
+        font-size: 14px;
+        font-weight: normal;
+        padding: 8px 10px;
+        border-radius: 4px;
+      }
+      #form-container .form-control::placeholder {
+        font-size: 14px;
+        font-weight: normal;
+        color: #6c757d;
+      }
+
+      /* Style select */
+      #selectSekolah option[selected] {
+        background-color: #eef2f7;
+        font-style: italic;
+        font-weight: bold;
+        color: #2c3e50;
+      }
+      #selectSekolah option:disabled {
+        color: #999;
+        font-style: italic;
+      }
+
+      /* Animasi Slide */
+      .slide-down {
+        animation: slideDown 0.4s ease forwards;
+      }
+      .slide-up {
+        animation: slideUp 0.4s ease forwards;
+      }
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes slideUp {
+        from {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        to {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+      }
+
+      /* Alert centang - lonjong */
+      #alertBox {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 17px;
+        border-radius: 25%; /* lonjong */
+        border: 3px solid #0d6efd;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        color: #0d6efd;
+        z-index: 9999;
+        text-align: center;
+        animation: fadeInOut 3s ease;
+      }
+      @keyframes fadeInOut {
+        0% {
+          opacity: 0;
+          transform: translate(-50%, -60%);
+        }
+        10% {
+          opacity: 1;
+          transform: translate(-50%, -50%);
+        }
+        90% {
+          opacity: 1;
+          transform: translate(-50%, -50%);
+        }
+        100% {
+          opacity: 0;
+          transform: translate(-50%, -60%);
+        }
+      }
+
+      /* SVG centang */
+      .checkmark {
+        width: 40px;
+        height: 40px;
+        display: block;
+        stroke-width: 3;
+        stroke: #0d6efd;
+        fill: none;
+        stroke-linecap: round;
+        /* margin: 0 auto 10px; */
+      }
+      .checkmark__circle {
+        stroke-dasharray: 166;
+        stroke-dashoffset: 166;
+        animation: stroke 0.6s ease forwards;
+      }
+      .checkmark__check {
+        stroke-dasharray: 48;
+        stroke-dashoffset: 48;
+        animation: stroke 0.4s ease forwards 0.6s;
+      }
+      @keyframes stroke {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="main">
+      <!-- Page Title -->
+      <div
+        class="page-title light-background"
+        style="margin-top: -7%; margin-bottom: -3%"
+      >
+        <div class="container">
+          <h1>SMAN 1 Grogol</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">SMAN 1 Grogol</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Service Details Section -->
+      <div class="container gallery-container">
+        <div class="tz-gallery">
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <a class="lightbox" href="assets/img/sman1grogol/1.jpg">
+                <img src="assets/img/sman1grogol/1.jpg" alfoto kegiatan" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="lightbox" href="assets/img/sman1grogol/2.jpg">
+                <img src="assets/img/sman1grogol/2.jpg" alt="foto kegiatan" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="lightbox" href="assets/img/sman1grogol/3.jpg">
+                <img src="assets/img/sman1grogol/3.jpg" alt="foto kegiatan" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <a class="lightbox" href="assets/img/sman1grogol/3.jpg">
+                <img src="assets/img/sman1grogol/3.jpg" alt="foto kegiatan" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="lightbox" href="assets/img/sman1grogol/1.jpg">
+                <img src="assets/img/sman1grogol/1.jpg" alt="foto kegiatan" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="lightbox" href="assets/img/sman1grogol/2.jpg">
+                <img src="assets/img/sman1grogol/2.jpg" alt="foto kegiatan" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol -->
+        <div class="text-center" style="margin-top: 20px">
+          <button
+            id="show-form-btn"
+            type="submit"
+            class="btn btn-primary btn-lg"
+          >
+            Isi Formulir
+          </button>
+        </div>
+
+        <!-- Form -->
+        <div id="form-container">
+          <form id="konsultasi-form">
+            <div class="form-group">
+              <label for="selectSekolah">Pilih Pangkalan</label>
+              <select id="wilayah" name="wilayah" class="form-control">
+                <option value="SMAN 1 Grogol" selected>SMAN 1 Grogol</option>
+                <option value="SMAN 2 Pare" disabled>SMAN 2 Pare</option>
+                <option value="SMAN 1 Gurah" disabled>SMAN 1 Gurah</option>
+                <option value="SMKN 1 Ngasem" disabled>SMKN 1 Ngasem</option>
+                <option value="MAN 3 kediri" disabled>MAN 3 Kediri</option>
+                <option value="SMA Dharma Wanita" disabled>
+                  SMA Dharma Wanita
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="nama">Nama (anonim)</label>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                class="form-control"
+                placeholder="Masukkan nama Anda"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="pesan">Cerita</label>
+              <textarea
+                name="cerita"
+                id="cerita"
+                class="form-control"
+                rows="4"
+                placeholder="Tulis Cerita Anda"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Alert -->
+    <div id="alertBox">
+      <svg class="checkmark" viewBox="0 0 52 52">
+        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+        <path class="checkmark__check" fill="none" d="M14 27l7 7 17-17" />
+      </svg>
+      <!-- Cerita berhasil dikirim! -->
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">iLanding</strong>
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="credits">
+          Designed by
+          <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed By
+          <a href="https://themewagon.com">ThemeWagon</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vendor JS -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+
+    <script>
+      // kirim form
+      document
+        .getElementById("konsultasi-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const wilayah = document.getElementById("wilayah").value;
+          const nama = document.getElementById("nama").value;
+          const cerita = document.getElementById("cerita").value;
+
+          if (!wilayah || !nama || !cerita)
+            return alert("Mohon lengkapi semua field.");
+
+          const ceritaBaru = { nama, wilayah, cerita };
+
+          fetch(
+            "https://script.google.com/macros/s/AKfycbxxnmkxfU-QFuKLHHYqdQo1sP-g5lj_TxK8Cw5oQNL-kd-Xy9Hz6ekuBEUeW9cZu8q8AQ/exec",
+            {
+              method: "POST",
+              headers: { "Content-Type": "text/plain;charset=utf-8" },
+              body: JSON.stringify(ceritaBaru),
+            }
+          )
+            .then((res) => res.text())
+            .then((text) => {
+              document.getElementById("konsultasi-form").reset();
+            })
+            .catch((err) => {
+              console.error("Gagal mengirim cerita:", err);
+            });
+        });
+
+      // alert
+      baguetteBox.run(".tz-gallery");
+
+      const formContainer = document.getElementById("form-container");
+      const btnShowForm = document.getElementById("show-form-btn");
+      const contactForm = document.getElementById("konsultasi-form");
+      const alertBox = document.getElementById("alertBox");
+
+      btnShowForm.addEventListener("click", () => {
+        if (
+          formContainer.style.display === "none" ||
+          formContainer.style.display === ""
+        ) {
+          formContainer.style.display = "block";
+          formContainer.classList.remove("slide-up");
+          formContainer.classList.add("slide-down");
+        } else {
+          formContainer.classList.remove("slide-down");
+          formContainer.classList.add("slide-up");
+          setTimeout(() => (formContainer.style.display = "none"), 400);
+        }
+      });
+
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alertBox.style.display = "block";
+        setTimeout(() => {
+          alertBox.style.display = "none";
+        }, 3000);
+        contactForm.reset();
+      });
+    </script>
+  </body>
+</html>
