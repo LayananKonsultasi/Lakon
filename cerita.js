@@ -201,7 +201,7 @@ function tampilkanCerita() {
       komentarBox.className = "d-flex mt-3";
 
       const foto = document.createElement("img");
-      foto.src = `assets/img/photo/${(konselor || "")}.jpg`;
+      foto.src = `assets/img/photo/${konselor || ""}.jpg`;
       foto.alt = konselor || "";
       foto.className = "rounded-circle me-3";
       foto.style.width = "38px";
@@ -376,4 +376,5 @@ function bukaPopupKonselor(nama) {
 
   if (popup) popup.classList.add("show");
 }
+
 
